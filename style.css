@@ -57,7 +57,7 @@ a:hover {
 .hero {
     height: 80vh;
     background-image: linear-gradient(rgba(207, 90, 37, 0.5), rgba(48, 133, 151, 0.435)), url("./assets/orange_sunset.jpg");
-
+    background-blend-mode: darken;
 }
 
 .hero-text {
@@ -67,5 +67,36 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.hero-text h2 {
+    color: #1D1E2A;
+}
+
+.hero-text h1 {
+    color: #D15A44;
+
+}
+
+
+
+.hero-text img {
+    max-height: fit-content;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.companies {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.companies img {
+    max-width: 300px;
+    max-height: 150px;
+    margin: 12px;
+    align-content: center;
+
 
 }
