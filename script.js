@@ -43,3 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function toggleMenu() {
+  var hamburger = document.querySelector(".hamburger");
+  var mobileNav = document.querySelector(".mobile-nav");
+
+  hamburger.classList.toggle("open");
+  mobileNav.classList.toggle("open");
+}

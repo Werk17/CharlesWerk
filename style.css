@@ -34,6 +34,11 @@ h3 {
 
 nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    background-color: black;
+    position: relative;
 }
 
 .nav-links ul li a {
@@ -42,12 +47,7 @@ nav {
     transition: color 0.3s;
 }
 
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-    background-color: black;
-}
+
 
 .logo img {
     max-height: 17vh;
@@ -73,6 +73,39 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
+
+.hamburger {
+    display: none;
+    /* Hidden by default, will be displayed in mobile view */
+    font-size: 2rem;
+    /* Size of the hamburger icon */
+    background: none;
+    border: none;
+    color: white;
+    /* Color of the hamburger icon */
+}
+
+.mobile-nav {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    /* Position the menu right below the hamburger icon */
+    left: 0;
+    /* Align the menu to the left edge of the <nav> */
+    width: 100%;
+    /* You can adjust this as needed */
+    background-color: #fff;
+    /* Background color of the mobile nav */
+    z-index: 1;
+    /* Ensures the menu is below the hamburger but above everything else */
+}
+
+.mobile-nav.open {
+    display: block;
+    /* Show the nav when it's open */
+}
+
 
 /* HERO */
 
