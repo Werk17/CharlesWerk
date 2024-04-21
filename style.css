@@ -89,6 +89,8 @@ a:hover {
     display: none;
     /* Hidden by default */
     position: absolute;
+    max-height: 0;
+    /* Initially set max-height to 0 */
     top: 100%;
     /* Position the menu right below the hamburger icon */
     left: 0;
@@ -99,11 +101,15 @@ a:hover {
     /* Background color of the mobile nav */
     z-index: 1;
     /* Ensures the menu is below the hamburger but above everything else */
+    transition: max-height 0.8s ease;
 }
 
 .mobile-nav.open {
     display: block;
     /* Show the nav when it's open */
+    max-height: 500px;
+    /* Set to the maximum height your menu might be. It should be more than the total height of all links. */
+
 }
 
 
@@ -191,7 +197,7 @@ a:hover {
 
 .hobbies-section {
     width: 80%;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 50px 0;
 }
 
@@ -200,6 +206,9 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    padding: 10px 5px;
+    background-color: #ebf5ff;
+    border-radius: 6px;
 }
 
 .hobby-card img {
@@ -210,7 +219,7 @@ a:hover {
 }
 
 .hobby-card-content {
-    max-width: 50%;
+    max-width: 90%;
     padding: 0 20px;
 }
 
@@ -235,6 +244,9 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    padding: 10px 5px;
+    background-color: #ebf5ff;
+    border-radius: 6px;
 }
 
 .projects-section h1 {
@@ -252,7 +264,7 @@ a:hover {
 }
 
 .project-card-content {
-    max-width: 50%;
+    max-width: 90%;
     padding: 0 20px;
 }
 
@@ -270,14 +282,14 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     padding: 50px 0;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    background: linear-gradient(to bottom, #e5ceac, #4d8c94);
     /* background-image: url("./assets/contact-section.png"); */
 }
 
 .contact-section h2 {
     width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -287,7 +299,7 @@ a:hover {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    /* padding: 5px; */
 }
 
 .form-group label {

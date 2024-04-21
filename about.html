@@ -77,17 +77,26 @@
 <body style="background: linear-gradient(to right, #0A2342, #E95D22);
 ">
     <nav>
-        <div class="logo"><a href="index.html"><img src="./assets/logos/MyLogo1SideNoBG.png" alt=" website logo"></a>
+        <div class="logo">
+            <a href="index.html"><img src="./assets/logos/MyLogo1SideNoBG.png" alt="website logo"></a>
         </div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul class="nav-links">
             <a href="about.html">About</a>
             <a href="hobbies.html">My Hobbies</a>
             <a href="my-work.html">My Work</a>
             <a href="contact.html">Contact</a>
-            <!-- <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a> -->
         </ul>
+        <div class="mobile-nav">
+            <ul class="nav-links">
+                <a href="about.html">About</a>
+                <a href="hobbies.html">My Hobbies</a>
+                <a href="my-work.html">My Work</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </div>
     </nav>
 
     <div class="about-section">
