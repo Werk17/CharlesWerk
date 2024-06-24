@@ -37,7 +37,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 12vh;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     background-color: black;
     position: relative;
 }
@@ -69,14 +69,16 @@ nav {
 .logo-script {
     font-family: "Playwrite IT Moderna", cursive;
     font-optical-sizing: auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #D15A44;
 }
 
 .logo-solutions {
     /* font-family: 'Monsterrat', sans-serif; */
-    font-family: "Playwrite IT Moderna", cursive;
+    font-family: "Playwrite IT Moderna";
     font-optical-sizing: auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #5aa2cc;
 }
 
 .logo img {
@@ -154,28 +156,30 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-
 }
 
 .hero-text {
+    padding: 50px;
     color: #231815;
     margin-bottom: 5%;
-
+    background-color: #ffffff73;
+    border-radius: 10px;
 }
 
 .hero-text h2 {
     color: #1D1E2A;
-    font-size: 2.7rem;
+    font-size: 2.4rem;
 }
 
 .hero-text h1 {
-    color: #D15A44;
+    color: #e64b30;
     font-size: 2.7rem;
+    text-shadow: #231815;
 }
 
 .hero h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    color: #318cc1;
 }
 
 #profile-pic {
@@ -323,7 +327,8 @@ a:hover {
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
-    color: #D15A44;
+    color: #ce3f26;
+    font-weight: 500;
 }
 
 .contact-form {
