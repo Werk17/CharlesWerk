@@ -190,9 +190,11 @@ a:hover {
 }
 
 .about-section {
+    background-color: black;
     width: 80%;
-    margin: 0 auto;
-    padding: 50px 0;
+    margin: 20px auto;
+    padding: 40px 0;
+    border-radius: 10px;
 }
 
 .about-content {
@@ -213,46 +215,9 @@ a:hover {
     color: rgb(224, 223, 223);
 }
 
-.hobbies-section {
-    width: 80%;
-    margin: 5px auto;
-    padding: 50px 0;
-}
-
-.hobby-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    padding: 10px 5px;
-    background-color: #ebf5ff;
-    border-radius: 6px;
-}
-
-.hobby-card img {
-    max-width: 40%;
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-}
-
-.hobby-card-content {
-    max-width: 90%;
-    padding: 0 20px;
-}
-
-.hobby-card-content h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.hobby-card-content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
 .projects-section {
-    width: 80%;
+    background: linear-gradient(to bottom, #08496f, #D15A44);
+    width: 100%;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -261,16 +226,19 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    width: 80%;
+    margin: 20px auto;
     padding: 10px 5px;
     background-color: #002848;
     border-radius: 6px;
+    opacity: .9;
 }
 
 .projects-section h1 {
     width: 100%;
     text-align: center;
     margin-bottom: 2%;
+    color: #D15A44;
 }
 
 .project-card img {
@@ -312,11 +280,13 @@ a:hover {
     padding: 10px 0;
     text-align: center;
     color: #ce3f26;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contact-form {
-    max-width: 500px;
+    max-width: 600px;
+    background-color: #00000056;
+    padding: 15px;
     margin: 0 auto;
 
 }
@@ -503,7 +473,7 @@ footer {
     max-width: 300px;
     margin: 20px;
     padding: 20px;
-    background-color: #ebf5ff;
+    background-color: #08496f;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -511,7 +481,7 @@ footer {
 
 .skill i {
     font-size: 2.5rem;
-    color: #1D1E2A;
+    color: #fff;
     margin-bottom: 15px;
 }
 
@@ -523,7 +493,8 @@ footer {
 
 .skill p {
     font-size: 1.2em;
-    color: #1D1E2A;
+    /* color: #1D1E2A; */
+    color: #f0f0f0;
 }
 
 .skill:hover {
@@ -586,13 +557,24 @@ footer {
     transform: scale(1.05);
 }
 
+.projects-button {
+    background-color: #318cc1;
+    /* Accent color */
+    color: #ffffff;
+    /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
 /* TESTIMONIALS SECTION */
 .testimonials {
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
-    background-color: #f7f7f7;
+    background-color: #f0f0f0;
     /* Light background */
 }
 
@@ -614,14 +596,14 @@ footer {
     max-width: 300px;
     margin: 20px;
     padding: 20px;
-    background-color: #ebf5ff;
+    background-color: #08496f;
     border-radius: 10px;
     text-align: center;
 }
 
 .testimonial p {
     font-size: 1.2em;
-    color: #1D1E2A;
+    color: #f0f0f0;
     margin-bottom: 10px;
 }
 
