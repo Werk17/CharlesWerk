@@ -34,12 +34,14 @@ h3 {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 17vh;
+    height: 12vh;
+    padding: 0 1rem;
     background-color: black;
     position: relative;
 }
+
 
 .nav-links ul li a {
     color: #191f24;
@@ -47,11 +49,39 @@ nav {
     transition: color 0.3s;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
 
+.logo-text {
+    color: white;
+    /* Change to match your design */
+    /* font-size: 1rem; */
+    align-items: center;
+    gap: 0.5rem;
+    /* Adjust as needed */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.logo-script {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.1rem;
+}
+
+.logo-solutions {
+    /* font-family: 'Monsterrat', sans-serif; */
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.1rem;
+}
 
 .logo img {
-    max-height: 17vh;
-    margin-top: 10px;
+    max-height: 11vh;
+    margin: 10px 0;
 }
 
 .nav-links {
@@ -245,7 +275,7 @@ a:hover {
     justify-content: space-between;
     margin-bottom: 30px;
     padding: 10px 5px;
-    background-color: #ebf5ff;
+    background-color: #002848;
     border-radius: 6px;
 }
 
@@ -271,19 +301,21 @@ a:hover {
 .project-card-content h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #d16957;
 }
 
 .project-card-content p {
     font-size: 1.2em;
     line-height: 1.6;
+    color: white;
 }
 
 .contact-section {
     width: 100%;
     margin: 0 auto;
     padding: 50px 0;
-    background: linear-gradient(to bottom, #e5ceac, #4d8c94);
-    /* background-image: url("./assets/contact-section.png"); */
+    background: linear-gradient(to bottom, #08496f, #D15A44);
+    opacity: .9;
 }
 
 .contact-section h2 {
@@ -291,6 +323,7 @@ a:hover {
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
+    color: #D15A44;
 }
 
 .contact-form {
@@ -306,7 +339,7 @@ a:hover {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #0A2342;
+    color: white;
 }
 
 .form-group input[type="text"],
@@ -324,7 +357,7 @@ a:hover {
 
 .form-group button {
     padding: 10px 20px;
-    background-color: #E95D22;
+    background-color: #08496f;
     color: #fff;
     border: none;
     border-radius: 5px;

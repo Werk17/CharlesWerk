@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+MX:wght@100..400&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/85be7362fd.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
     <title>
-        Charles Werk
+        InnoNative Solutions
     </title>
     <style>
         a {
@@ -24,21 +29,23 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html"><img src="./assets/logos/MyLogo1SideNoBG.png" alt="website logo"></a>
+            <a href="index.html"><img src="./assets/logos/MyLogo1.png" alt="website logo"></a>
+            <a class="logo-text" href="index.html">
+                <span class="logo-script">InnoNative</span>
+                <span class="logo-solutions">Solutions</span>
+            </a>
         </div>
         <button class="hamburger" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links">
             <a href="about.html">About</a>
-            <a href="hobbies.html">My Hobbies</a>
             <a href="my-work.html">My Work</a>
             <a href="contact.html">Contact</a>
         </ul>
         <div class="mobile-nav">
             <ul class="nav-links">
                 <a href="about.html">About</a>
-                <a href="hobbies.html">My Hobbies</a>
                 <a href="my-work.html">My Work</a>
                 <a href="contact.html">Contact</a>
             </ul>
@@ -53,32 +60,6 @@
         <img src="./assets/highTechPhotoNoBG.png" alt="" id="profile-pic">
     </div>
 
-    <div class="contact-section">
-        <div class="contact-form">
-            <form id="contactForm">
-                <h2>Contact Me</h2>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"><br><br>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br><br>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="terms">Accept Terms:</label>
-                    <input type="checkbox" id="terms" name="terms"><br><br>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
     <script src="script.js">
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
         function myFunction() {
@@ -106,7 +87,6 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./my-work.html">Projects/Portfolio</a></li>
-                <li><a href="./hobbies.html">My Hobbies</a></li>
                 <li><a href="./about.html">About</a></li>
             </ul>
         </div>
