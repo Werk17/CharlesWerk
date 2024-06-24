@@ -13,6 +13,7 @@ body, html {
     height: 100%;
     font-family: "Poppins", "sans-serif";
     scroll-behavior: smooth;
+    background-color: #e6e4e4;
 }
 
 h1 {
@@ -186,23 +187,6 @@ a:hover {
     max-width: 50%;
     margin-bottom: 0;
     max-height: 100%;
-}
-
-
-.companies {
-    background-color: rgba(48, 118, 151, 0.435);
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.companies img {
-    max-width: 300px;
-    max-height: 150px;
-    margin: 12px;
-    align-content: center;
-
-
 }
 
 .about-section {
@@ -489,4 +473,191 @@ footer {
 
 .footer-section a:hover {
     color: rgb(184, 78, 46);
+}
+
+/* SKILLS SECTION */
+.skills {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    /* Light background */
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    color: #D15A44;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ebf5ff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill i {
+    font-size: 2.5rem;
+    color: #1D1E2A;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    color: #D15A44;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1.2em;
+    color: #1D1E2A;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* PROJECTS SECTION */
+.projects {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #08496f;
+    /* Dark background */
+    color: white;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    color: #D15A44;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #002848;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #d16957;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+    /* Light background */
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    color: #D15A44;
+    margin-bottom: 30px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ebf5ff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    color: #1D1E2A;
+    margin-bottom: 10px;
+}
+
+.testimonial h3 {
+    font-size: 1.5em;
+    color: #D15A44;
+}
+
+/* CALL TO ACTION SECTION */
+.cta {
+    width: 100%;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #08496f, #D15A44);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #1D1E2A;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #318cc1;
 }
