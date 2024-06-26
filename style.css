@@ -190,17 +190,20 @@ a:hover {
 }
 
 .about-section {
-    background-color: black;
-    width: 80%;
+    background: linear-gradient(to bottom, #08496f, #D15A44);
+    opacity: .9;
+    width: 100%;
     margin: 20px auto;
-    padding: 40px 0;
-    border-radius: 10px;
+    margin: auto;
 }
 
 .about-content {
-    max-width: 800px;
+    background-color: #191f24;
+    border-radius: 10px;
+    max-width: 80%;
+    padding: 20px 10px;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
 }
 
 .about-content h2 {
