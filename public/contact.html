@@ -12,14 +12,28 @@
         href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+MX:wght@100..400&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore-compat.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA7Cfb12vhToi4oN6YtW6hy6DfgNyXpF4Y",
+            authDomain: "innonative-solutions.firebaseapp.com",
+            projectId: "innonative-solutions",
+            storageBucket: "innonative-solutions.appspot.com",
+            messagingSenderId: "268920578714",
+            appId: "1:268920578714:web:ffbec238d090a8e1863523",
+        };
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        // Initialize Firestore
+        const db = firebase.firestore();
+    </script>
+
     <title>
         Contact Me
     </title>
-    <style>
-        .error {
-            border: 2px solid red;
-        }
-    </style>
 
 </head>
 
@@ -48,6 +62,7 @@
             </ul>
         </div>
     </nav>
+
     <div class="contact-section">
         <div class="contact-form">
             <form id="contactForm">
@@ -74,6 +89,35 @@
             </form>
         </div>
     </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const terms = document.getElementById('terms').checked;
+
+            // Save data to Firestore
+            db.collection('contacts').add({
+                name: name,
+                email: email,
+                message: message,
+                terms: terms,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            })
+                .then(function () {
+                    alert('Your message has been sent successfully!');
+                    // Clear the form
+                    document.getElementById('contactForm').reset();
+                })
+                .catch(function (error) {
+                    console.error('Error writing document: ', error);
+                    alert('There was an error sending your message. Please try again later.');
+                });
+        });
+    </script>
     <script src="https://kit.fontawesome.com/85be7362fd.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
@@ -83,7 +127,7 @@
     <div class="footer-container" id="footer">
         <div class="footer-section">
             <h4>About Me</h4>
-            <p>Computer Science student passionate about software development and machine learning. Exploring innovative
+            <p>Computer Science graduate passionate about software engineering and web development. Exploring innovative
                 solutions to complex problems.</p>
         </div>
         <div class="footer-section">
