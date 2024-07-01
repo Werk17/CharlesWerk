@@ -6,28 +6,17 @@ on:
       - main  # Set the branch you want to deploy from (e.g., 'main' or 'master')
 
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # Specify the Node.js version you need
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build the project
-      run: npm run build  # Adjust this command if you have a different build script
-
     - name: Deploy to Firebase Hosting
       uses: FirebaseExtended/action-hosting-deploy@v0
       with:
-        repoToken: '${{ secrets.GITHUB_TOKEN }}'
-        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         channelId: live
         projectId: innonative-solutions  # Replace with your Firebase project ID
