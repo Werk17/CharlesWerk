@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    image: nginx:alpine
+    volumes:
+      - ./public/:/usr/share/nginx/html
+    ports:
+      - "8080:80"
+    networks:
+      - ohyeah
+
+networks:
+  ohyeah:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "192.168.66.0/24"
+
