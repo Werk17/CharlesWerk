@@ -13,23 +13,6 @@ Hello! My name is Charles Werk, and I am a computer science graduate with a pass
 - JavaScript
 - Firebase Hosting
 
-## Project Structure
-
-├── public
-│ ├── index.html
-│ ├── about.html
-│ ├── hobbies.html
-│ ├── projects.html
-│ ├── 404.html
-│ └── assets
-│ └── images
-├── .github
-│ └── workflows
-│ └── firebase-deploy.yml
-├── firebase.json
-└── README.md
-
-
 ## Setting Up the Project
 
 To set up the project locally, follow these steps:
