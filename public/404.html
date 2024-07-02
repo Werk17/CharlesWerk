@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA7Cfb12vhToi4oN6YtW6hy6DfgNyXpF4Y",
+            authDomain: "innonative-solutions.firebaseapp.com",
+            projectId: "innonative-solutions",
+            storageBucket: "innonative-solutions.appspot.com",
+            messagingSenderId: "268920578714",
+            appId: "1:268920578714:web:ffbec238d090a8e1863523",
+        };
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        // Initialize Firestore
+        const db = firebase.firestore();
+        const analytics = getAnalytics(app);
+    </script>
+
     <style>
         body {
             margin: 0;
