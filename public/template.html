@@ -15,7 +15,23 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico">
     <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
-    <script src="firebaseConfig.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA7Cfb12vhToi4oN6YtW6hy6DfgNyXpF4Y",
+            authDomain: "innonative-solutions.firebaseapp.com",
+            projectId: "innonative-solutions",
+            storageBucket: "innonative-solutions.appspot.com",
+            messagingSenderId: "268920578714",
+            appId: "1:268920578714:web:ffbec238d090a8e1863523",
+        };
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        // Initialize Firestore
+        const db = firebase.firestore();
+        const analytics = getAnalytics(app);
+    </script>
+
     <title>
         InnoNative Solutions
     </title>
