@@ -1,0 +1,139 @@
+/* GENERAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Poppins", "sans-serif";
+    scroll-behavior: smooth;
+    background-color: #e6e4e4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding: 0 1.5rem;
+    background-color: black;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #191f24;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-script {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    color: #D15A44;
+}
+
+.logo-solutions {
+    font-family: "Playwrite IT Moderna";
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    color: #5aa2cc;
+}
+
+.logo img {
+    max-height: 11vh;
+    margin: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    color: #1D1E2A;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+a:hover {
+    color: rgb(184, 78, 46);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    max-height: 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    transition: max-height 0.8s ease;
+}
+
+.mobile-nav.open {
+    display: block;
+    max-height: 500px;
+}
+
+/* Nav.css */
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links.open {
+    display: block;
+    /* additional styling for mobile menu */
+}
+
+.hamburger {
+    display: none;
+    /* Show this button in smaller screens */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.open {
+        display: block;
+    }
+}
