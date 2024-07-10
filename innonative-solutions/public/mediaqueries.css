@@ -1,0 +1,142 @@
+/* Smaller than standard desktop */
+@media (max-width: 1200px) {
+    .nav-links, .hero-text, .about-content, .hobby-card-content, .project-card-content {
+        padding: 0 15px;
+    }
+
+    .hero, .companies, .about-section, .hobbies-section, .projects-section, .contact-section {
+        padding: 0 10px;
+    }
+
+    .hobby-card, .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby-card img, .project-card img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        /* Show the hamburger menu */
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide the desktop navigation links */
+    }
+
+
+    .mobile-nav.open .nav-links {
+        display: block;
+        /* This will stack the links vertically */
+        padding: 0;
+        /* Reset padding */
+        margin: 0;
+        /* Reset margin */
+        list-style-type: none;
+        /* Removes bullet points from the list */
+    }
+
+    .mobile-nav.open .nav-links a {
+        display: block;
+        /* Each link will take the full width of the container */
+        padding: 10px;
+        /* Adds some padding around the links */
+        text-decoration: none;
+        /* Removes underline from links */
+        color: black;
+        /* Sets text color */
+        background-color: #f1f1f1;
+        /* Sets background color for each link */
+        border-bottom: 1px solid #ddd;
+        /* Adds a separator between links */
+    }
+
+    .mobile-nav.open .nav-links a:hover {
+        background-color: #e1e1e1;
+        /* Change background color on hover */
+    }
+
+    /* Transition for the hamburger to X */
+    .hamburger.open .fa-bars:before {
+        content: "\f00d";
+        /* Font Awesome 'times' character */
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #profile-pic {
+        max-width: 80%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .nav-links {
+        display: none;
+
+    }
+
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        /* Consider a dropdown menu for mobile */
+    }
+
+    .hero-text, .about-content, .hobby-card-content, .project-card-content {
+        padding: 0 5px;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    .hero-text h2, .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    #profile-pic {
+        max-width: 100%;
+    }
+
+    .footer-section, .footer-bottom {
+        text-align: center;
+    }
+}
