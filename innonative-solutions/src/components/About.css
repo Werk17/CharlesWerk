@@ -108,37 +108,6 @@ blockquote {
 
 .quotes p {
     font-size: 1.2em;
-    color: rgb(224, 223, 223);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
-
-
-/* .about-section {
-    background: linear-gradient(to bottom, #08496f, #D15A44);
-    opacity: .9;
-    width: 100%;
-    margin: 20px auto;
-    margin: auto;
-}
-
-.about-content {
-    background-color: #191f24;
-    border-radius: 10px;
-    max-width: 80%;
-    padding: 20px 10px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.about-content h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #e64b30;
-}
-
-.about-content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: rgb(224, 223, 223);
-} */
