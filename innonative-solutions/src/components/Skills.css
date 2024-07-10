@@ -1,0 +1,52 @@
+.skills {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    color: #D15A44;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #08496f;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    color: #D15A44;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}

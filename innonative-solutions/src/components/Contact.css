@@ -1,0 +1,55 @@
+.contact-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #08496f, #D15A44);
+    opacity: .9;
+}
+
+.contact-section h2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    color: #ce3f26;
+    font-weight: 600;
+}
+
+.contact-form {
+    max-width: 600px;
+    background-color: #00000056;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #08496f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
