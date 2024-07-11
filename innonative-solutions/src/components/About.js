@@ -48,7 +48,7 @@ const About = () => {
                 <h3>Timeline</h3>
                 <div className="timeline-item">
                     <h4>June 2024 - Present</h4>
-                    <p>Software Engineer at XYZ Company</p>
+                    <p>Security and Systems Intern</p>
                 </div>
                 <div className="timeline-item">
                     <h4>2020 - 2024</h4>
