@@ -9,8 +9,9 @@ const About = () => {
                     {/* Profile Picture Section */}
                     <div className="profile-section">
                         <img src="/assets/highTechPhotoNoBG.png" alt="Profile" id="profile-pic" />
-                        <h2>About Me</h2>
+
                     </div>
+                    <h2>About Me</h2>
                     <p>Hello! My name is Charles Werk, and I am a computer science graduate passionate about technology and innovation. I recently completed my Bachelor's degree and am excited to embark on the next chapter of my career.</p>
                     <p>During my studies, I developed a strong foundation in programming languages such as Python and Java. I have also honed my skills in website design, creating visually appealing and user-friendly interfaces.</p>
                     <p>My primary interests lie in Software Engineering and Application Development. I have collaborated on various group software projects, including website design, mobile app development, and numerous programming assignments. These experiences have not only enhanced my technical skills but also improved my ability to work effectively in a team environment.</p>
