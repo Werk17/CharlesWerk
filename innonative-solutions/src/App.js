@@ -1,13 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
 import About from './components/About';
 import MyWork from './components/MyWork';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
+import Home from './components/Home';
+import Services from './components/Services';
 import './App.css';
 
 const App = () => {
@@ -15,7 +14,8 @@ const App = () => {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/my-work" element={<MyWork />} />
         <Route path="/contact" element={<Contact />} />

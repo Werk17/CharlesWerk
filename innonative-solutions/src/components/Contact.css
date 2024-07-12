@@ -20,6 +20,7 @@
     background-color: #00000056;
     padding: 15px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .form-group {
@@ -39,6 +40,8 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #191f24;
+    color: white;
 }
 
 .form-group textarea {
@@ -52,4 +55,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #ce3f26;
 }

@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "innonative-solutions/build",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }

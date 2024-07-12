@@ -6,8 +6,8 @@ const Footer = () => {
         <footer>
             <div className="footer-container" id="footer">
                 <div className="footer-section">
-                    <h4>About Me</h4>
-                    <p>Computer Science graduate passionate about software engineering and web development. Exploring innovative solutions to complex problems.</p>
+                    <h4>About Us</h4>
+                    <p>Innonative Solutions LLC is dedicated to delivering innovative software engineering and web development solutions. We are committed to solving complex problems with creativity and technology.</p>
                 </div>
                 <div className="footer-section">
                     <h4>Quick Links</h4>
@@ -19,18 +19,19 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <h4>Contact Information</h4>
-                    {/* <p>Email: your.email@example.com</p> */}
+                    <p>Email: <a href="mailto:charles.werk@innonative-solutions.com">charles.werk@innonative-solutions.com</a></p>
                     <p>LinkedIn: <a href="https://www.linkedin.com/in/charles-werk/">Charles Werk</a></p>
                     <p>GitHub: <a href="https://github.com/Werk17">Werk17</a></p>
                 </div>
                 <div className="footer-section">
-                    <h4>Connect with Me</h4>
+                    <h4>Connect with Us</h4>
                     <a href="https://www.linkedin.com/in/charles-werk/"><span style={{ fontSize: '2rem' }}><i className="fa-brands fa-linkedin"></i></span></a>
                     <a href="https://github.com/Werk17"><span style={{ fontSize: '2rem' }}><i className="fa-brands fa-github"></i></span></a>
+                    <a href="https://www.facebook.com/profile.php?id=61561665602540" target="_blank" rel="noopener noreferrer"><span style={{ fontSize: '2rem' }}><i className="fa-brands fa-facebook"></i></span></a>
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>© 2024 Charles Werk. All rights reserved.</p>
+                <p>© 2024 Innonative Solutions LLC. All rights reserved.</p>
             </div>
         </footer>
     );
