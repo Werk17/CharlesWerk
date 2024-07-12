@@ -8,6 +8,7 @@ const NavBar = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
     return (
         <nav>
             <div className="logo">
@@ -17,16 +18,16 @@ const NavBar = () => {
                     <span className="logo-solutions">Solutions</span>
                 </Link>
             </div>
-            <button className="hamburger" onClick={toggleMenu}>
-                <i className="fas fa-bars"></i>
+            <button className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
             </button>
-            <ul className="nav-links">
+            <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
                 <li><Link to="/services">Services</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/my-work">My Projects</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
-            <div className="mobile-nav">
+            <div className={`mobile-nav ${isOpen ? 'open' : ''}`}>
                 <ul className="nav-links">
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/about">About</Link></li>

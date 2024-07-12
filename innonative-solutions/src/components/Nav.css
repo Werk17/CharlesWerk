@@ -107,22 +107,7 @@ a:hover {
     max-height: 500px;
 }
 
-/* Nav.css */
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links.open {
-    display: block;
-    /* additional styling for mobile menu */
-}
-
-.hamburger {
-    display: none;
-    /* Show this button in smaller screens */
-}
-
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -135,5 +120,30 @@ a:hover {
 
     .nav-links.open {
         display: block;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
     }
+
+    .nav-links li {
+        padding: 1rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.open {
+        display: block;
+    }
+}
+
+/* Hero Section (example) */
+.hero {
+    position: relative;
+    z-index: 0;
 }
