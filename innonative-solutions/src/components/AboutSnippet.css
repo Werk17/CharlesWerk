@@ -1,0 +1,18 @@
+.about-snippet {
+    background: #191f24;
+    padding: 50px 0;
+    text-align: center;
+    color: #e0dfdf;
+}
+
+.about-snippet h2 {
+    margin-bottom: 20px;
+    color: #e64b30;
+}
+
+.about-snippet p {
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.2em;
+}

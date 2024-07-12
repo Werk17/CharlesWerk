@@ -1,20 +1,20 @@
 import React from 'react';
-import NavBar from './NavBar';
 import Hero from './Hero';
-import Skills from './Skills';
 import Projects from './Projects';
 import Testimonials from './Testimonials';
 import CTA from './CTA';
-import Footer from './Footer';
+import Services from './Services';
+import AboutSnippet from './AboutSnippet';
 // import './Home.css';
 
 const Home = () => {
     return (
         <div className="home-page">
             <Hero />
-            <Skills />
+            <Services />
             <Projects />
             <Testimonials />
+            <AboutSnippet />
             <CTA />
         </div>
     );
