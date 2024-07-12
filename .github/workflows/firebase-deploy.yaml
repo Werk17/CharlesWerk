@@ -36,3 +36,4 @@ jobs:
         firebase deploy --only hosting --project innonative-solutions
       env:
         FIREBASE_AUTH_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}  # Pass the token as an environment variable
+
