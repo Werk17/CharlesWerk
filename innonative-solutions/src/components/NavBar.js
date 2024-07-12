@@ -21,12 +21,14 @@ const NavBar = () => {
                 <i className="fas fa-bars"></i>
             </button>
             <ul className="nav-links">
+                <li><Link to="/services">Services</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/my-work">My Projects</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
             <div className="mobile-nav">
                 <ul className="nav-links">
+                    <li><Link to="/services">Services</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/my-work">My Projects</Link></li>
                     <li><Link to="/contact">Contact</Link></li>

@@ -5,8 +5,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* background: linear-gradient(to bottom, #08496f, #D15A44); */
     background: url('../../public/assets/about-background.png') no-repeat center center;
+    background-size: cover;
+    /* Ensure the background image covers the entire hero section */
     color: #fff;
     padding: 100px 20px;
     min-height: 500px;
@@ -17,19 +18,37 @@
 
 .hero-content {
     max-width: 50%;
+    position: relative;
+    /* Ensure the background for text has correct positioning */
+    z-index: 2;
+    /* Make sure content is above the background overlay */
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    color: #e64b30;
+    /* Primary color for main heading */
+    font-size: 2.7rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    /* Darker shadow for better contrast */
     margin-bottom: 0.5rem;
 }
 
 .hero-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    color: #231815;
+    /* Secondary color for subheading */
     margin-bottom: 1rem;
 }
 
 .hero-content p {
+    color: #fff;
+    /* Light text color for better readability */
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark background for the text */
+    padding: 10px;
+    /* Padding for better text readability */
+    border-radius: 5px;
+    /* Rounded corners for the background */
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
@@ -41,16 +60,19 @@
 
 .hero-button {
     background-color: #D15A44;
+    /* Button color */
     color: #fff;
     padding: 15px 25px;
     margin-right: 10px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
 }
 
 .hero-button:hover {
-    background-color: #1072aa;
+    background-color: #c93d24;
+    /* Darker shade on hover */
 }
 
 .hero-image img {
@@ -59,5 +81,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    opacity: 1;
+    opacity: 0.8;
+    /* Reduced opacity to make sure the image doesn’t overpower the text */
 }

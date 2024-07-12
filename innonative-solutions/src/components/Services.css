@@ -1,6 +1,6 @@
 .services {
     background: linear-gradient(to bottom, #08496f, #D15A44);
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -18,9 +18,9 @@
 
 .service {
     background: #fff;
-    padding: 20px;
+    padding: 30px;
     margin: 10px;
-    width: 200px;
+    width: 225px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -28,8 +28,10 @@
 .service h3 {
     margin-bottom: 10px;
     color: #D15A44;
+    font-size: 1.4em;
 }
 
 .service p {
     color: #333;
+    font-size: 1.1em;
 }
