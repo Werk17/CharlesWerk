@@ -31,6 +31,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
+                <p>1001 S. Main Street, STE 500, Kalispell, MT, 59901, USA</p> <br />
                 <p>© 2024 Innonative Solutions LLC. All rights reserved.</p>
             </div>
         </footer>
