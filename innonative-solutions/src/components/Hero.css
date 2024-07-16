@@ -34,7 +34,7 @@
 }
 
 .hero-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #231815;
     /* Secondary color for subheading */
     margin-bottom: 1rem;
@@ -43,13 +43,13 @@
 .hero-content p {
     color: #fff;
     /* Light text color for better readability */
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     /* Dark background for the text */
-    padding: 10px;
+    padding: 12px;
     /* Padding for better text readability */
     border-radius: 5px;
     /* Rounded corners for the background */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -71,16 +71,18 @@
 }
 
 .hero-button:hover {
-    background-color: #c93d24;
+    background-color: #ac321d;
+    color: #fff;
     /* Darker shade on hover */
 }
 
 .hero-image img {
     max-width: 50%;
-    height: auto;
+    height: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
-    opacity: 0.8;
+    opacity: 0.95;
+
     /* Reduced opacity to make sure the image doesn’t overpower the text */
 }

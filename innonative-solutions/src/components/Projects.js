@@ -29,7 +29,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="projects-button-container">
-                <a href="my-work.html" className="projects-button">See All Projects</a>
+                <a href="/my-work" className="projects-button">See All Projects</a>
             </div>
         </section>
     );
