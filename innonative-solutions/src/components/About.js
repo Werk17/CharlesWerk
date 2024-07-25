@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import Skills from './Skills';
 import Projects from './Projects';
-import Testimonials from './Testimonials';
 const About = () => {
     return (
         <div className="about-page">
