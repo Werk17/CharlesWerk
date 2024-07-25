@@ -1,7 +1,9 @@
 footer {
-    background-color: #f1f1f1b3;
+    background-color: #0A1F32;
+    /* Dark blue for footer background */
     padding: 20px 0;
-    color: #333;
+    color: #FFFFFF;
+    /* White text */
     font-family: Arial, sans-serif;
 }
 
@@ -21,6 +23,8 @@ footer {
 
 .footer-section h4 {
     margin-bottom: 15px;
+    color: #D15A44;
+    /* Orange-Red for section headers */
 }
 
 .footer-section ul,
@@ -31,13 +35,15 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #007bff;
+    color: #5AA2CC;
+    /* Light Blue for links */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: rgb(184, 78, 46);
+    color: #F28E72;
+    /* Light Orange-Red for hover effect */
 }
 
 .footer-bottom {
@@ -47,13 +53,17 @@ footer {
 
 .footer-bottom p {
     margin: 0;
+    color: #A9A9A9;
+    /* Gray for footer bottom text */
 }
 
 .footer-container a {
-    color: black;
+    color: #FFFFFF;
+    /* White for default link color */
     text-decoration: none;
 }
 
 .footer-section a:hover {
-    color: rgb(184, 78, 46);
+    color: #F28E72;
+    /* Light Orange-Red for hover effect */
 }

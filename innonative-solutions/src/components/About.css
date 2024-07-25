@@ -46,7 +46,7 @@
 }
 
 
-.skills, .timeline, .projects, .testimonials, .hobbies, .quotes {
+.skills, .timeline, .hobbies, .quotes {
     margin: 20px auto;
     max-width: 80%;
     text-align: center;

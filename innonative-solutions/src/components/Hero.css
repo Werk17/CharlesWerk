@@ -1,14 +1,15 @@
 /* Hero.css */
 
+/* Base styles */
 .hero {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: url('../../public/assets/about-background.png') no-repeat center center;
+    background: url('../../public/assets/stars.jpg') no-repeat right;
     background-size: cover;
-    /* Ensure the background image covers the entire hero section */
-    color: #fff;
+    color: #FFFFFF;
+    /* White text for readability */
     padding: 100px 20px;
     min-height: 500px;
     position: relative;
@@ -19,70 +20,215 @@
 .hero-content {
     max-width: 50%;
     position: relative;
-    /* Ensure the background for text has correct positioning */
     z-index: 2;
-    /* Make sure content is above the background overlay */
+    /* Ensure content is above the background overlay */
 }
 
 .hero-content h1 {
-    color: #e64b30;
-    /* Primary color for main heading */
-    font-size: 2.7rem;
+    color: #D15A44;
+    /* Orange-Red for main heading */
+    font-size: 3.5rem;
+    /* Larger font size for main heading */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     /* Darker shadow for better contrast */
-    margin-bottom: 0.5rem;
-}
-
-.hero-content h2 {
-    font-size: 1.5rem;
-    color: #231815;
-    /* Secondary color for subheading */
     margin-bottom: 1rem;
 }
 
+.hero-content h2 {
+    font-size: 2rem;
+    /* Larger font size for subheading */
+    color: #5AA2CC;
+    /* Light Blue for subheading */
+    margin-bottom: 1.5rem;
+}
+
 .hero-content p {
-    color: #fff;
-    /* Light text color for better readability */
+    color: #FFFFFF;
+    /* White text for better readability */
     background: rgba(0, 0, 0, 0.6);
     /* Dark background for the text */
-    padding: 12px;
-    /* Padding for better text readability */
+    padding: 15px;
+    /* Increased padding for better text readability */
     border-radius: 5px;
     /* Rounded corners for the background */
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    /* Larger font size for body text */
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    /* Increased line height for better readability */
 }
 
 .hero-buttons {
-    margin-top: 20px;
+    margin-top: 30px;
+    /* Increased margin top for better spacing */
 }
 
 .hero-button {
-    background-color: #D15A44;
-    /* Button color */
-    color: #fff;
-    padding: 15px 25px;
-    margin-right: 10px;
+    background-color: #5AA2CC;
+    /* Light Blue button color */
+    color: #FFFFFF;
+    /* White text */
+    padding: 15px 30px;
+    /* Larger padding for buttons */
+    margin-right: 15px;
+    /* Increased margin between buttons */
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
+    font-size: 1.2rem;
+    /* Larger font size for button text */
 }
 
 .hero-button:hover {
-    background-color: #ac321d;
-    color: #fff;
-    /* Darker shade on hover */
+    background-color: #F28E72;
+    /* Light Orange-Red for hover effect */
+    color: #FFFFFF;
+    /* White text */
 }
 
 .hero-image img {
     max-width: 50%;
-    height: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     opacity: 0.95;
-
     /* Reduced opacity to make sure the image doesn’t overpower the text */
+}
+
+/* Media Queries */
+
+/* Smaller than standard desktop */
+@media (max-width: 1200px) {
+    .hero, .hero-content, .hero-image img {
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+
+    .hero-button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 950px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        /* Adjust font size for tablets */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin: 10px 0;
+        /* Add margin for spacing */
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        /* Adjust font size for tablets */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin: 10px 0;
+        /* Add margin for spacing */
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .hero-content h1, .hero-content h2 {
+        font-size: 1.5rem;
+        /* Adjust font size for phones */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 10px;
+        /* Adjust padding for better readability */
+    }
+
+    .hero-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero-image img {
+        position: static;
+        width: 100%;
+        max-width: 250px;
+        /* Limit the max width for smaller screens */
+        margin-top: 10px;
+    }
 }

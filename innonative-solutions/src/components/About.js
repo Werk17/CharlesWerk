@@ -43,9 +43,6 @@ const About = () => {
             {/* Projects Section */}
             <Projects />
 
-            {/* Testimonials Section */}
-            <Testimonials />
-
             {/* Quotes Section */}
             <div className="quotes">
                 <h3>Inspirational Quotes</h3>

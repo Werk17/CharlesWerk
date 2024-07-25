@@ -1,30 +1,52 @@
 .cta {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 20px;
+    /* Adjusted padding for better spacing */
     background: linear-gradient(to bottom, #08496f, #D15A44);
+    /* Dark Blue to Orange-Red gradient */
     color: white;
     text-align: center;
 }
 
 .cta h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
+    /* Increased font size for better visibility */
     margin-bottom: 20px;
+    color: #FFFFFF;
+    /* White text for contrast */
 }
 
 .cta p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    /* Slightly larger font size for readability */
     margin-bottom: 30px;
+    color: #F0F0F0;
+    /* Lighter color for contrast */
+    max-width: 800px;
+    /* Restrict width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    /* Center align text block */
 }
 
 .cta-button {
-    padding: 10px 20px;
-    background-color: #1D1E2A;
+    padding: 15px 30px;
+    /* Increased padding for emphasis */
+    background-color: #5AA2CC;
+    /* Light Blue */
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem;
+    /* Slightly larger font size for emphasis */
+    font-weight: bold;
+    /* Make text stand out */
     transition: background-color 0.3s ease;
+    display: inline-block;
+    /* Ensure button respects padding */
 }
 
 .cta-button:hover {
-    background-color: #318cc1;
+    background-color: #F28E72;
+    /* Light Orange-Red for hover effect */
 }

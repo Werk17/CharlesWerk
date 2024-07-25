@@ -8,15 +8,15 @@ const Services = () => {
             <div className="services-container">
                 <div className="service">
                     <h3>Web Development</h3>
-                    <p>Creating responsive and modern websites tailored to your business needs.</p>
+                    <p>Creating responsive and modern websites to help you reach your audience effectively.</p>
                 </div>
-                <div className="service">
-                    <h3>Mobile App Development</h3>
-                    <p>Developing intuitive and high-performance mobile applications for both Android and iOS.</p>
+                <div class="service">
+                    <h3>Mobile Apps</h3>
+                    <p>Developing mobile applications that provide a seamless user experience on any device.</p>
                 </div>
-                <div className="service">
-                    <h3>Software Engineering</h3>
-                    <p>Providing software solutions that enhance productivity and drive business growth.</p>
+                <div class="service">
+                    <h3>Graphic Design</h3>
+                    <p>Designing visually appealing graphics to enhance your brand’s presence and communication.</p>
                 </div>
                 <div className="service">
                     <h3>Consulting</h3>

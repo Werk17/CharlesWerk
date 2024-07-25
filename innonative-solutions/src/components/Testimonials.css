@@ -1,41 +1,83 @@
+/* Testimonials.css */
+
 .testimonials {
-    width: 80%;
-    margin: 0 auto;
+    /* background: linear-gradient(to bottom, #08496f, #D15A44); */
+    background-color: #F9F9F9;
+    /* Very light gray */
+    /* Dark Blue to Orange-Red gradient */
     padding: 50px 0;
     text-align: center;
-    background-color: #f0f0f0;
+    color: #FFFFFF;
+    /* White text */
 }
 
 .testimonials h2 {
     font-size: 2.5em;
     color: #D15A44;
+    /* Orange-Red */
     margin-bottom: 30px;
 }
 
 .testimonials-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
+    /* Space between testimonials */
 }
 
 .testimonial {
+    background-color: #002848;
+    /* Dark Blue */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex: 1;
     min-width: 250px;
     max-width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #08496f;
-    border-radius: 10px;
-    text-align: center;
+    margin: 0 10px;
+    /* Space between testimonials */
 }
 
 .testimonial p {
     font-size: 1.2em;
-    color: #f0f0f0;
-    margin-bottom: 10px;
+    color: #FFFFFF;
+    /* White text */
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .testimonial h3 {
     font-size: 1.5em;
     color: #D15A44;
+    /* Orange-Red */
+    margin-bottom: 10px;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Added shadow on hover for depth */
+}
+
+.testimonials-button {
+    background-color: #5AA2CC;
+    /* Light Blue */
+    color: #FFFFFF;
+    /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display: inline-block;
+    /* Ensures button respects its padding and text alignment */
+}
+
+.testimonials-button:hover {
+    background-color: #F28E72;
+    /* Light Orange-Red */
+    color: #FFFFFF;
+    /* White text */
 }

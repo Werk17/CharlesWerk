@@ -5,9 +5,9 @@ const Hero = () => {
     return (
         <div className="hero">
             <div className="hero-content">
-                <h1>Welcome to Innonative Solutions</h1>
-                <h2>Innovative Software Engineering and Web Development</h2>
-                <p>Just because you have a small business, doesn't mean you can't achieve big results.</p>
+                <h1>Innovative Digital Solutions for Modern Businesses</h1>
+                <h2>Empowering Your Business with Cutting-Edge Technology</h2>
+                <p>At Innonative Solutions, we specialize in creating mobile apps, websites, and digital products that drive results. Our mission is to bring advanced technology and a robust digital presence to our community and beyond.</p>
                 <div className="hero-buttons">
                     {/* <a href="/services" className="hero-button">Our Services</a> */}
                     <a href="/contact" className="hero-button">Get in Touch</a>
