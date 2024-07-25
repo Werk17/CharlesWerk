@@ -6,8 +6,8 @@ import MyWork from './components/MyWork';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Services from './components/Services';
 import './App.css';
+import ServicesPage from './components/ServicesPage';
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/my-work" element={<MyWork />} />
         <Route path="/contact" element={<Contact />} />

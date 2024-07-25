@@ -6,23 +6,24 @@
     background: linear-gradient(to bottom, #08496f, #D15A44);
     opacity: .9;
     width: 100%;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .about-content {
     background-color: #191f24;
     border-radius: 10px;
     max-width: 80%;
-    padding: 20px 10px;
+    padding: 40px 20px;
     margin: 0 auto;
     text-align: left;
     color: #e0dfdf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-section {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .profile-pic {
@@ -34,33 +35,31 @@
 }
 
 .about-content h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    color: #e64b30;
+    color: #D15A44;
 }
 
 .about-content p {
     font-size: 1.2em;
     line-height: 1.6;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-
 .skills, .timeline, .hobbies, .quotes {
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 80%;
     text-align: center;
 }
 
 .skills h3, .timeline h3, .projects h3, .testimonials h3, .hobbies h3, .quotes h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #e64b30;
-    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #D15A44;
 }
 
 .skill {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .progress-bar {
@@ -71,31 +70,33 @@
 
 .progress {
     background-color: #4caf50;
-    height: 10px;
+    height: 20px;
 }
 
 .timeline-item, .project-item, .hobby-item {
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .timeline-item h4 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    color: #e64b30;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #D15A44;
 }
 
 .project-item img, .hobby-item img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 blockquote {
     font-style: italic;
     background-color: #f9f9f9;
-    padding: 10px;
+    padding: 20px;
     border-left: 5px solid #ccc;
+    margin: 20px 0;
 }
 
 .hobby-item {
@@ -104,11 +105,11 @@ blockquote {
 
 .hobby-item p {
     font-size: 1.2em;
-    color: rgb(224, 223, 223);
+    color: #e0dfdf;
 }
 
 .quotes p {
     font-size: 1.2em;
-    color: rgb(0, 0, 0);
+    color: #000;
     text-align: center;
 }

@@ -1,0 +1,72 @@
+.create-package-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 0;
+    /* background-color: #f0f0f0; */
+}
+
+.create-package-form {
+    background: #08496f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.create-package-form h2 {
+    font-size: 2.5em;
+    color: #D15A44;
+    margin-bottom: 20px;
+}
+
+.create-package-form .form-group {
+    margin-bottom: 20px;
+}
+
+.create-package-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-package-form input[type="text"],
+.create-package-form input[type="email"],
+.create-package-form textarea,
+.create-package-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #08496f;
+}
+
+.create-package-form input[type="text"]::placeholder,
+.create-package-form input[type="email"]::placeholder,
+.create-package-form textarea::placeholder {
+    color: #888888;
+}
+
+.create-package-form button {
+    background-color: #5AA2CC;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-package-form button:hover {
+    background-color: #D15A44;
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 10px 0;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
