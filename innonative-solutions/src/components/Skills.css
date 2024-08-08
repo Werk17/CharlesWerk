@@ -27,7 +27,8 @@
     background-color: #08496f;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .skill i {
@@ -48,5 +49,10 @@
 }
 
 .skill:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+    background: linear-gradient(to bottom right, #2c6fae, #D15A44);
+
 }

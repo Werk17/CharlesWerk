@@ -1,8 +1,8 @@
 /* Projects.css */
 
 .projects {
-    /* background: linear-gradient(to top, #08496f, #D15A44); */
-    background-color: #E8F4FA;
+    background: linear-gradient(to bottom right, #000000ec, #D15A44);
+    /* background-color: #E8F4FA; */
     /* Light blue */
     width: 100%;
     margin: 0 auto;
@@ -12,11 +12,14 @@
     color: white;
 }
 
-.projects h2 {
-    font-size: 3em;
-    color: #5AA2CC;
-    /* Orange-Red */
-    margin-bottom: 30px;
+.projects h1 {
+    color: #448dd1;
+    /* Orange-Red for main heading */
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    /* Larger font size for main heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Darker shadow for better contrast */
+    margin-bottom: 1.5rem;
 }
 
 .projects-container {
@@ -28,12 +31,12 @@
 }
 
 .project {
-    background-color: #002848;
+    background-color: #04477e6e;
     /* Dark Blue */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     flex: 1;
     min-width: 250px;
     max-width: 300px;
@@ -52,6 +55,7 @@
     color: #D15A44;
     /* Orange-Red */
     margin-bottom: 10px;
+
 }
 
 .project p {
@@ -61,28 +65,37 @@
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    /* Lift effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Added shadow on hover for depth */
+    /* Deeper shadow on hover */
+    background: linear-gradient(to bottom right, #2c6fae, #D15A44);
 }
 
 .projects-button {
     background-color: #5AA2CC;
-    /* Light Blue */
+    /* Light Blue button color */
     color: #FFFFFF;
     /* White text */
-    padding: 10px 20px;
+    padding: 15px 30px;
+    /* Larger padding for buttons */
+    margin-right: 15px;
+    margin-top: 2rem;
+    /* Increased margin between buttons */
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1.1rem;
-    margin-top: 20px;
+    font-weight: bold;
     display: inline-block;
-    /* Ensures button respects its padding and text alignment */
+    font-size: 1.2rem;
+    /* Larger font size for button text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .projects-button:hover {
     background-color: #F28E72;
-    /* Light Orange-Red */
+    /* Light Orange-Red for hover effect */
     color: #FFFFFF;
     /* White text */
+    transform: scale(1.05);
+    background-color: #F28E72;
 }

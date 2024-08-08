@@ -10,7 +10,7 @@
 }
 
 .about-content {
-    background-color: #191f24;
+    background-color: #191f2462;
     border-radius: 10px;
     max-width: 80%;
     padding: 40px 20px;
@@ -37,7 +37,7 @@
 .about-content h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #D15A44;
+    color: #448dd1;
 }
 
 .about-content p {

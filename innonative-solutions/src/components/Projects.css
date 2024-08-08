@@ -12,9 +12,19 @@
     width: 80%;
     margin: 20px auto;
     padding: 10px 5px;
-    background-color: #002848;
+    background-color: #00000061;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     border-radius: 6px;
-    opacity: .9;
+    /* opacity: .9; */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+    background: linear-gradient(to bottom right, #2c6fae, #D15A44);
+
 }
 
 .projects-section h1 {

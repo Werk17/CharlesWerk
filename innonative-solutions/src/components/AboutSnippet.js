@@ -1,13 +1,23 @@
-import React from 'react';
-import './AboutSnippet.css';
+import React from "react";
+import "./AboutSnippet.css";
 
 const AboutSnippet = () => {
-    return (
-        <section className="about-snippet">
-            <h2>About Innonative Solutions LLC</h2>
-            <p>Innonative Solutions LLC is dedicated to bringing cutting-edge technology and innovative solutions to businesses and communities. Founded by Charles Werk, we specialize in web and mobile app development, software engineering, and consulting services. Our mission is to empower clients with the tools and expertise they need to succeed in the digital age.</p>
-        </section>
-    );
+  return (
+    <section className="about-snippet">
+      <h2>
+        About Innonative Solutions LLC: Your Partner in Digital Transformation
+      </h2>
+      <p>
+        Innonative Solutions LLC, founded by Charles Werk, is committed to
+        delivering innovative technology solutions that drive business growth
+        and success. We specialize in web and mobile app development, software
+        engineering, and consulting services tailored to meet the unique needs
+        of businesses and communities. Our mission is to empower clients with
+        cutting-edge tools and expert guidance, enabling them to thrive in
+        today’s digital landscape.
+      </p>
+    </section>
+  );
 };
 
 export default AboutSnippet;

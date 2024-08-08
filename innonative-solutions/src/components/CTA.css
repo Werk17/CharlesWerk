@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.cta h2 {
+.cta h1 {
     font-size: 2.8em;
     /* Increased font size for better visibility */
     margin-bottom: 20px;
@@ -30,23 +30,29 @@
 }
 
 .cta-button {
-    padding: 15px 30px;
-    /* Increased padding for emphasis */
     background-color: #5AA2CC;
-    /* Light Blue */
-    color: white;
-    text-decoration: none;
+    /* Light Blue button color */
+    color: #FFFFFF;
+    /* White text */
+    padding: 15px 30px;
+    /* Larger padding for buttons */
+    margin-right: 15px;
+    /* Increased margin between buttons */
     border-radius: 5px;
-    font-size: 1.2rem;
-    /* Slightly larger font size for emphasis */
+    text-decoration: none;
     font-weight: bold;
-    /* Make text stand out */
-    transition: background-color 0.3s ease;
     display: inline-block;
-    /* Ensure button respects padding */
+    font-size: 1.2rem;
+    /* Larger font size for button text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #F28E72;
     /* Light Orange-Red for hover effect */
+    color: #FFFFFF;
+    /* White text */
+    transform: scale(1.05);
+    background-color: #F28E72;
+
 }

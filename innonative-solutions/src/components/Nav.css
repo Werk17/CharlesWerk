@@ -74,6 +74,7 @@ a {
     color: white;
     text-decoration: none;
     text-decoration-color: black;
+    border-radius: 50px;
 }
 
 a:hover {
@@ -97,7 +98,7 @@ a:hover {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #000000;
     z-index: 1;
     transition: max-height 0.8s ease;
 }
@@ -105,6 +106,7 @@ a:hover {
 .mobile-nav.open {
     display: block;
     max-height: 500px;
+    text-align: center;
 }
 
 /* Media Queries for Responsive Design */

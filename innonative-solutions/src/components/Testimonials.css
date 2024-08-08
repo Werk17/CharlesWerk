@@ -1,8 +1,7 @@
 /* Testimonials.css */
 
 .testimonials {
-    /* background: linear-gradient(to bottom, #08496f, #D15A44); */
-    background-color: #F9F9F9;
+    background-color: #000000;
     /* Very light gray */
     /* Dark Blue to Orange-Red gradient */
     padding: 50px 0;
@@ -11,11 +10,14 @@
     /* White text */
 }
 
-.testimonials h2 {
-    font-size: 2.5em;
-    color: #D15A44;
-    /* Orange-Red */
-    margin-bottom: 30px;
+.testimonials h1 {
+    color: #448dd1;
+    /* Orange-Red for main heading */
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    /* Larger font size for main heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Darker shadow for better contrast */
+    margin-bottom: 1.5rem;
 }
 
 .testimonials-container {
@@ -27,12 +29,12 @@
 }
 
 .testimonial {
-    background-color: #002848;
+    background-color: #ffffff2f;
     /* Dark Blue */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     flex: 1;
     min-width: 250px;
     max-width: 300px;
@@ -49,16 +51,19 @@
 }
 
 .testimonial h3 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #D15A44;
     /* Orange-Red */
     margin-bottom: 10px;
 }
 
 .testimonial:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    /* Lift effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Added shadow on hover for depth */
+    /* Deeper shadow on hover */
+    background: linear-gradient(to top left, #2c6fae, #D15A44);
+
 }
 
 .testimonials-button {

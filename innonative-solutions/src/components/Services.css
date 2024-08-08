@@ -1,7 +1,7 @@
 /* Services.css */
 
 .services {
-    background: linear-gradient(to bottom, #115d89, #D15A44);
+    background: linear-gradient(to bottom right, #1082c4aa, #000000);
     padding: 60px 20px;
     /* Increased padding for more space */
     text-align: center;
@@ -9,13 +9,14 @@
     /* White text for readability */
 }
 
-.services h2 {
-    font-size: 3rem;
-    /* Larger font size for the heading */
-    margin-bottom: 30px;
-    /* Increased margin for better spacing */
+.services h1 {
     color: #D15A44;
-    /* Light Blue for the heading color */
+    /* Orange-Red for main heading */
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    /* Larger font size for main heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Darker shadow for better contrast */
+    margin-bottom: 1rem;
 }
 
 .services-container {
@@ -27,17 +28,17 @@
 }
 
 .service {
-    background: #FFFFFF;
+    background: #ffffff86;
     /* White background for service items */
     padding: 40px;
     /* Increased padding for a more substantial look */
-    margin: 20px;
+    margin: 0px;
     /* Increased margin for better spacing */
     width: 300px;
     /* Slightly wider service boxes */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     /* Smooth transition for hover effect */
 }
 
@@ -46,6 +47,8 @@
     /* Lift effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     /* Deeper shadow on hover */
+    background: linear-gradient(to bottom right, #2c6fae, #D15A44);
+
 }
 
 .service h3 {
