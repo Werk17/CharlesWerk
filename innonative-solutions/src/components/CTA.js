@@ -4,15 +4,16 @@ import "./CTA.css";
 const CTA = () => {
   return (
     <section className="cta">
-      <h1>Ready to Elevate Your Digital Presence?</h1>
+      <h1>Ready to Transform Your Business with Innovative Technology?</h1>
       <p>
-        Partner with Innonative Solutions to create impactful mobile apps,
-        websites, and digital products tailored to your needs. Whether you’re
-        looking to enhance your current platform or start a new project from
-        scratch, we’re here to help.
+        Partner with Innonative Solutions LLC to develop customized mobile apps,
+        websites, and digital solutions that drive growth and success. Whether
+        you're enhancing an existing platform or launching a new project, our
+        expertise in software engineering and digital development will help you
+        achieve your goals.
       </p>
       <a href="/contact" className="cta-button">
-        Let's Grow Together
+        Let's Grow Your Business Together
       </a>
     </section>
   );
