@@ -12,7 +12,7 @@
 }
 
 .contact-form {
-    flex: 2;
+    flex: 1;
     background: #ffffff;
     padding: 30px;
     border-radius: 10px;
@@ -103,4 +103,45 @@
     display: block;
     margin-bottom: 10px;
     font-size: 1.2em;
+}
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+}
+
+/* Phones and smaller devices */
+@media (max-width: 480px) {
+    .contact-form h2 {
+        font-size: 2em;
+    }
+
+    .contact-info h3 {
+        font-size: 1.8em;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+        text-wrap: wrap;
+    }
+
+    .social-media h4 {
+        font-size: 1.2em;
+    }
+
+    .contact-form button, .contact-info a {
+        font-size: 1em;
+    }
 }
