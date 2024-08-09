@@ -75,3 +75,92 @@ button:hover {
   background-color: #F28E72;
   /* Light Orange-Red hover effect */
 }
+
+
+/* src/App.css */
+
+/* Blog controls styling */
+.blog-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for blog posts */
+.blog-posts.grid .blog-post {
+  width: calc(33.333% - 20px);
+  margin: 10px;
+}
+
+/* List layout for blog posts */
+.blog-posts.list .blog-post {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Individual blog post styling */
+.blog-post {
+  border: 1px solid #ccc;
+  /* Soft border for subtle separation */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  /* White background for clarity */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Light shadow for depth */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Blog post title styling */
+.blog-post h2 {
+  font-size: 2rem;
+  color: #D15A44;
+  /* Primary branding color */
+  margin-bottom: 10px;
+}
+
+/* Blog post content styling */
+.blog-post p {
+  font-size: 1.2rem;
+  color: #191f24;
+  /* Dark text color for readability */
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-posts.grid .blog-post {
+    width: calc(50% - 20px);
+    /* Adjust grid to two columns on smaller screens */
+  }
+
+  .blog-post h2 {
+    font-size: 1.8rem;
+    /* Slightly smaller font for mobile */
+  }
+
+  .blog-post p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-posts.grid .blog-post {
+    width: 100%;
+    /* Single column layout on very small screens */
+  }
+
+  .blog-post {
+    padding: 15px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .blog-post h2 {
+    font-size: 1.6rem;
+    /* Further reduce font size for smaller devices */
+  }
+
+  .blog-post p {
+    font-size: 0.9rem;
+  }
+}
