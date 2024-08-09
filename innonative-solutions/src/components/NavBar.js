@@ -39,6 +39,9 @@ const NavBar = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
       </ul>
       <div className={`mobile-nav ${isOpen ? "open" : ""}`}>
         <ul className="nav-links">
@@ -53,6 +56,9 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </div>

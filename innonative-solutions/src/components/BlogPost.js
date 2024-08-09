@@ -1,8 +1,15 @@
 // src/components/BlogPost.js
 import React from "react";
-import "./BlogPost.css";
 
 const BlogPost = ({ post }) => {
+  const date = new Date(post.date.seconds * 1000);
+
+  // Format the date (e.g., 'August 8, 2024')
+  const formattedDate = date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
   return (
     <div className="blog-post">
       <h2>{post.title}</h2>

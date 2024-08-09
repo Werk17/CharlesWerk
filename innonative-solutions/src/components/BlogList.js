@@ -1,7 +1,7 @@
 // src/components/BlogList.js
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "../firebaseConfig";
 import BlogPost from "./BlogPost";
 
 const BlogList = () => {

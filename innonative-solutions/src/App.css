@@ -47,29 +47,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-header, footer {
-  background-color: #0A1F32;
-  /* Dark blue header/footer */
-  color: #FFFFFF;
-  /* White text */
-}
-
-h1, h2, h3 {
-  color: #D15A44;
-  /* Orange-Red headings */
-}
-
-a {
-  color: #5AA2CC;
-  /* Light Blue links */
-}
-
-button {
-  background-color: #5AA2CC;
-  /* Light Blue buttons */
-  color: #FFFFFF;
-  /* White text on buttons */
-}
 
 button:hover {
   background-color: #F28E72;
@@ -95,7 +72,7 @@ button:hover {
 /* List layout for blog posts */
 .blog-posts.list .blog-post {
   width: 100%;
-  margin: 10px 0;
+  margin: 15px;
 }
 
 /* Individual blog post styling */
